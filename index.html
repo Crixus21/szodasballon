@@ -189,14 +189,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalImage = document.getElementById("modalImage");
     const modalElement = document.getElementById("imageModal");
     const modalTitle = document.getElementById("imageModalLabel");
-    const modal = new bootstrap.Modal(modalElement); // Egy példányt létrehozunk és újra felhasználunk
+    const modal = new bootstrap.Modal(modalElement); 
 
     document.querySelectorAll(".open-modal").forEach(img => {
         img.addEventListener("click", function () {
             modalImage.src = this.src; 
             modalImage.alt = this.alt; 
             modalTitle.innerHTML = this.alt; 
-            modal.show(); // Megnyitjuk a modált
+            modal.show(); 
         });
     });
 
@@ -209,46 +209,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.overflow = "auto";
         document.body.style.paddingRight = "0px";
 
-        // A háttér eltávolítása, ha létezik
+    
         const backdrop = document.querySelector('.modal-backdrop');
         if (backdrop) {
             backdrop.remove();
         }
     });
 });
-
-
-/* document.addEventListener("DOMContentLoaded", function () {
-    const modalImage = document.getElementById("modalImage");
-    const modalElement = document.getElementById("imageModal");
-
-    document.querySelectorAll(".open-modal").forEach(img => {
-        img.addEventListener("click", function () {
-            modalImage.src = this.src; 
-            modalImage.alt = this.alt; 
-            document.getElementById("imageModalLabel").innerHTML = this.alt;
-            const myModal = new bootstrap.Modal(modalElement);
-            myModal.show();
-        });
-    });
-
-    const closeButton = document.querySelector('.btn-close');
-    closeButton.addEventListener('click', function () {
-        const myModal = bootstrap.Modal.getInstance(modalElement);
-        myModal.hide();
-    });
-
-    // Esemény a modál bezárásakor
-    modalElement.addEventListener('hidden.bs.modal', function () {
-        document.body.style.overflow = "auto";
-    document.body.style.paddingRight = "0px";
-        // A háttér eltávolítása, ha létezik
-        const backdrop = document.querySelector('.modal-backdrop');
-        if (backdrop) {
-            backdrop.remove();
-        }
-    });
-}); */
 
 
 </script>
