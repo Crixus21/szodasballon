@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ALM Kft.</title>
@@ -169,7 +170,7 @@ A ballonokat első használat előtt ki kell mosni!!!
 </body>
 
 
-<script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 <script src="scripts.js"></script>
 <script>
 createProductSection("25 literes ballon", "img/25lures_ballon.jpg", "Árak: <br> Nettó: 35.000 Ft <br>Bruttó: 44.450 Ft");
@@ -185,6 +186,39 @@ createProductSection("5 literes szifon", "img/5literesszifon.jpg", "Árak:<br>Ne
 createProductSection("Mosószeres, vegyszeres, tartály nyomásmérővel, levegő csatlakozással", "img/072.JPG", "Árak:<br>Nettó: 60.000 Ft<br>Bruttó: 76.200 Ft");
 
 document.addEventListener("DOMContentLoaded", function () {
+    const modalImage = document.getElementById("modalImage");
+    const modalElement = document.getElementById("imageModal");
+    const modalTitle = document.getElementById("imageModalLabel");
+    const modal = new bootstrap.Modal(modalElement); // Egy példányt létrehozunk és újra felhasználunk
+
+    document.querySelectorAll(".open-modal").forEach(img => {
+        img.addEventListener("click", function () {
+            modalImage.src = this.src; 
+            modalImage.alt = this.alt; 
+            modalTitle.innerHTML = this.alt; 
+            modal.show(); // Megnyitjuk a modált
+        });
+    });
+
+    const closeButton = document.querySelector('.btn-close');
+    closeButton.addEventListener('click', function () {
+        modal.hide();
+    });
+
+    modalElement.addEventListener('hidden.bs.modal', function () {
+        document.body.style.overflow = "auto";
+        document.body.style.paddingRight = "0px";
+
+        // A háttér eltávolítása, ha létezik
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+            backdrop.remove();
+        }
+    });
+});
+
+
+/* document.addEventListener("DOMContentLoaded", function () {
     const modalImage = document.getElementById("modalImage");
     const modalElement = document.getElementById("imageModal");
 
@@ -206,15 +240,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Esemény a modál bezárásakor
     modalElement.addEventListener('hidden.bs.modal', function () {
+        document.body.style.overflow = "auto";
+    document.body.style.paddingRight = "0px";
         // A háttér eltávolítása, ha létezik
         const backdrop = document.querySelector('.modal-backdrop');
         if (backdrop) {
             backdrop.remove();
         }
     });
-});
+}); */
 
 
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
