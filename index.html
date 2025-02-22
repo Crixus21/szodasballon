@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
         img.addEventListener("click", function () {
             modalImage.src = this.src; 
             modalImage.alt = this.alt; 
+            document.getElementById("imageModalLabel").innerHTML = this.alt;
             const myModal = new bootstrap.Modal(modalElement);
             myModal.show();
         });
