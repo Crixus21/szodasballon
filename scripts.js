@@ -4,7 +4,7 @@ function createProductSection(title, imageUrl, priceText) {
 
     section.innerHTML = `
         <div class="row text-center">
-            <h3 class="col">${title}</h3>
+            <h3 class="col pb-3">${title}</h3>
         </div>
         <div class="row">
             <div class="col text-center">
