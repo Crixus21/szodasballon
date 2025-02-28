@@ -20,7 +20,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background: url(img/top-bg.jpg) no-repeat center;
+    background: url(img/top-bg.webp) no-repeat center;
     background-size: cover;
     filter: brightness(90%);
     z-index: 1;
@@ -56,17 +56,17 @@ li.nav-item > a::before {
 }
 
 li.nav-item:nth-child(1) > a::before {
-    background: url("img/nav1.jpg") no-repeat center;
+    background: url("img/nav1.webp") no-repeat center;
     background-size: 100% auto;
 }
 
 li.nav-item:nth-child(2) > a::before {
-    background: url("img/nav2.jpg") no-repeat center;
+    background: url("img/nav2.webp") no-repeat center;
     background-size: 100% auto;
 }
 
 li.nav-item:nth-child(3) > a::before {
-    background: url("img/nav3.jpg") no-repeat center;
+    background: url("img/nav3.webp") no-repeat center;
     background-size: 100% auto;
 }
 
