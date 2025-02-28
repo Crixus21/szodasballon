@@ -8,7 +8,7 @@ function createProductSection(title, imageUrl, priceText) {
         </div>
         <div class="row">
             <div class="col text-center">
-                <img src="${imageUrl}" class="img-thumbnail open-modal"
+                <img src="${imageUrl}" loading="lazy" class="img-thumbnail open-modal"
                      alt="${title}" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal"/>
             </div>
