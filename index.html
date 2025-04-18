@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +24,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="justify-content-center collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav display-5 d-flex flex-wrap">
+                    <ul class="navbar-nav lead d-flex flex-wrap align-content-center justify-content-center">
                         <li class="nav-item">
-                            <a href="#containerCegunk" class="nav-link text-light py-4 px-5">Cégünk</a>
+                            <a href="#containerCegunk" class="nav-link text-white py-4 px-5">Cégünk</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#containerTermekek" class="nav-link text-light py-4 px-5">Termékek</a>
+                            <a href="#containerTermekek" class="nav-link text-white py-4 px-5">Termékek</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#containerKapcsolat" class="nav-link text-light py-4 px-5">Kapcsolat</a>
+                            <a href="#containerKapcsolat" class="nav-link text-white py-4 px-5">Kapcsolat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/villanyszereles/index.html" class="nav-link text-white py-4 px-5">Villanyszerelés</a>
                         </li>
                     </ul>
                 </div>
@@ -89,23 +92,23 @@ A ballonokat első használat előtt ki kell mosni!!!
                     <h1 class="text-center">Lóistállók, acélszerkezetek, egyéb</h1>
                 </div>
                 <div id="galleria" class="d-flex flex-wrap justify-content-center">
-                    <img src="img/001.jpg" loading="lazy" alt="001" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/001.jpg" loading="lazy" alt="Egyéb01" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/002.jpg" loading="lazy" alt="002" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/002.jpg" loading="lazy" alt="Egyéb02" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/003.jpg" loading="lazy" alt="003" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/003.jpg" loading="lazy" alt="Egyéb03" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/004.jpg" loading="lazy" alt="004" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/004.jpg" loading="lazy" alt="Egyéb04" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/egyeb0001.jpg" loading="lazy" alt="egyeb0001" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/egyeb0001.jpg" loading="lazy" alt="Egyéb05" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/egyeb0002.jpg" loading="lazy" alt="egyeb0002" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/egyeb0002.jpg" loading="lazy" alt="Egyéb06" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/egyeb0003.jpg" loading="lazy" alt="egyeb0003" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/egyeb0003.jpg" loading="lazy" alt="Egyéb07" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/egyeb0004.jpg" loading="lazy" alt="egyeb0004" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/egyeb0004.jpg" loading="lazy" alt="Egyéb08" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img src="img/egyeb0005.jpg" loading="lazy" alt="egyeb0005" class="img-thumbnail open-modal" style="cursor: pointer;"
+                    <img src="img/egyeb0005.jpg" loading="lazy" alt="Egyéb09" class="img-thumbnail open-modal" style="cursor: pointer;"
                      data-bs-toggle="modal" data-bs-target="#imageModal">
                 </div>
             </div>
@@ -179,8 +182,6 @@ createProductSection("Saválló csapgolyó", "img/savallocsap_golyo.jpg", "Árak
 createProductSection("Biztonsági szelep rozsdamentes szárral<br>a régi golyóscsaphoz is használható", "img/a0301j.jpg", "Árak:<br>Nettó: 450 Ft<br>Bruttó: 508 Ft");
 createProductSection("Rozsdamentes szeleprugó", "img/a0302j.jpg", "Árak:<br>Nettó: 180 Ft<br>Bruttó: 228 Ft");
 createProductSection("Szelep rugóval", "img/a0303j.jpg", "Árak:<br>Nettó: 630Ft<br>Bruttó: 800Ft");
-createProductSection("5 literes szifon", "img/5literesszifon.jpg", "Árak:<br>Nettó: 14.000 Ft<br>Bruttó: 17.780 Ft");
-createProductSection("Mosószeres, vegyszeres, tartály nyomásmérővel, levegő csatlakozással", "img/072.JPG", "Árak:<br>Nettó: 60.000 Ft<br>Bruttó: 76.200 Ft");
 
 document.addEventListener("DOMContentLoaded", function () {
     const modalImage = document.getElementById("modalImage");

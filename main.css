@@ -22,7 +22,7 @@ body {
     width: 100%;
     background: url(img/top-bg.webp) no-repeat center;
     background-size: cover;
-    filter: brightness(90%);
+    /* filter: brightness(95%); */
     z-index: 1;
 }
 
@@ -36,10 +36,15 @@ body {
     z-index: 2;
 }
 
+.navbar-nav {
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 li.nav-item > a {
     position: relative;
     z-index: 3;
-    font-weight: 400;
+    font-weight: bold;
     text-shadow: 2px 2px black;
     color: #fff !important;
 }
@@ -70,6 +75,11 @@ li.nav-item:nth-child(3) > a::before {
     background-size: 100% auto;
 }
 
+li.nav-item:nth-child(4) > a::before {
+    background: url("img/main_link.jpg") no-repeat center;
+    background-size: 100% auto;
+}
+
 ul.navbar-nav li a {
     transition: text-shadow .2s;
 }
@@ -79,11 +89,11 @@ ul.navbar-nav li a::before {
 }
 
 ul.navbar-nav li a:hover {
-    text-shadow: 0px 0px 10px rgb(255,255,255,.3),0px 0px 10px rgb(255,255,255,.3),0px 0px 10px rgb(255,255,255,.3),0px 0px 10px #010f5e,0px 0px 10px #010f5e;
+    text-shadow: 0px 0px 10px rgb(255,255,255,.3),0px 0px 10px rgb(255,255,255,.3),0px 0px 10px rgb(255,255,255,.3),0px 0px 10px #010f5e,0px 0px 10px #010f5e, 0px 0px 10px #000;
 }
 
 ul.navbar-nav li a:hover::before {
-    opacity: .8;
+    opacity: .7;
 }
 
 .mainpar {
