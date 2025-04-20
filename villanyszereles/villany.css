@@ -16,7 +16,7 @@
 
 #banner {
     min-height: 20rem;
-    background-color: #1f2833;
+    background-color: #2f4454;
     overflow: hidden;
 }
 
@@ -42,7 +42,7 @@
     mask-image: 
     linear-gradient(to top, transparent, black 20%, black 90%, transparent),
     linear-gradient(to left, transparent, black 20%, black 90%, transparent);
-    mask-composite: intersect; /* vagy: destination-in Safari-nál */
+    mask-composite: intersect;
     -webkit-mask-image: 
     linear-gradient(to top, transparent, black 20%, black 90%, transparent),
     linear-gradient(to left, transparent, black 20%, black 90%, transparent);
@@ -78,6 +78,44 @@
     max-width: 50%;
     height: auto;
     padding: 1rem;
+}
+
+#story-text p {
+    margin-bottom: .3rem;
+}
+
+#story-text h2 {
+    font-size: 1.5rem;
+}
+
+#info-card {
+    border-radius: .4rem;
+    background-color: #2f4454;
+    color: #fff;
+}
+
+#info-card img {
+    height: 1em;
+    vertical-align: baseline;
+    margin-right: .5rem;
+}
+
+#footer {
+    height: 15rem;
+    background-color: #f79422;
+}
+
+#footer img {
+    width: auto;
+    height: 100%;
+
+    mask-image: 
+    
+    linear-gradient(to left, transparent, black 20%, black 80%, transparent);
+    mask-composite: intersect;
+    -webkit-mask-image: 
+    linear-gradient(to left, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-composite: intersect;
 }
 
 @media screen and ( max-width: 576px) {
