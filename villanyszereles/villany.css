@@ -85,7 +85,7 @@
 }
 
 #story-text p {
-    margin-bottom: .3rem;
+    margin-bottom: .1rem;
 }
 
 #story-text h2 {
@@ -122,6 +122,28 @@
     -webkit-mask-image: 
     linear-gradient(to right, transparent 0%, black 30%, black 100%);
     -webkit-mask-composite: intersect;
+}
+
+#arlista ul li{
+    list-style: none;
+}
+
+#arlista span {
+    text-decoration: underline;
+}
+
+#arlista > div:nth-of-type(even) {
+    background-color: #e1e2e4;
+}
+
+#arlista h3 {
+    margin: 1.5em 0 1.5em 0;
+}
+
+@media screen and ( min-width: 768px) {
+    #arlista {
+        max-width: 65%;
+    }
 }
 
 @media screen and ( max-width: 576px) {

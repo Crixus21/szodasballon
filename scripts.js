@@ -22,6 +22,8 @@ function createProductSection(title, imageUrl, priceText) {
     document.getElementById("products").appendChild(section);
 }
 
+     
+
 document.addEventListener("DOMContentLoaded", function() {
     const backToTop = document.getElementById("backToTop");
 
