@@ -108,10 +108,22 @@
     white-space: nowrap;
 }
 
+
 #footer {
     height: 15rem;
     background-color: #f79422;
     overflow: hidden;
+    position: relative;
+}
+
+#copyright {
+    color: white;
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    white-space: nowrap;
+    z-index: 10;
+
 }
 
 #footer img {
@@ -141,6 +153,10 @@
 }
 
 #arlista h3 {
+    margin: 1.5em 0 1.5em 0;
+}
+
+#arlista h4 {
     margin: 1.5em 0 1.5em 0;
 }
 
